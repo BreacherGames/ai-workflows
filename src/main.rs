@@ -1,5 +1,6 @@
 mod cli;
 mod cursor;
+mod ecosystem;
 mod install;
 mod pack;
 mod paths;
@@ -14,5 +15,7 @@ fn main() -> Result<()> {
         Command::Remove(args) => install::remove(args),
         Command::List => install::list(),
         Command::Doctor => install::doctor(),
+        Command::Add(args) => ecosystem::add(args),
+        Command::Find(args) => ecosystem::find(args),
     }
 }

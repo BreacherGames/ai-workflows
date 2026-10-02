@@ -3,7 +3,6 @@
 Team-wide AI workflows for daily development.
 
 Real Cursor skills in `skills/`, plus an always-on engineering rule in `rules/`.
-Install with `aiw` or with the skills.sh CLI.
 
 ## Daily loop
 
@@ -13,7 +12,7 @@ start-branch -> investigate -> implement -> review -> fix-ci -> commit -> open-p
 
 Also available: `unit-test`, `annotate`.
 
-## Install with aiw
+## Install the Breacher pack
 
 ```bash
 cargo install --path .
@@ -30,7 +29,25 @@ Shares skills and rules with the team. Commit `.ai-workflows/` and `.cursor/`.
 aiw install --scope project --project /path/to/app
 ```
 
-### Other commands
+## Open ecosystem
+
+`aiw` wraps skills.sh. Needs Node.js for `npx`.
+
+```bash
+aiw add owner/repo
+aiw add owner/repo --skill name
+aiw find tdd
+```
+
+Examples:
+
+```bash
+aiw add BreacherGames/ai-workflows
+aiw add vercel-labs/agent-skills
+aiw add mattpocock/skills --skill tdd
+```
+
+## Other commands
 
 ```bash
 aiw update
@@ -38,16 +55,6 @@ aiw remove
 aiw list
 aiw doctor
 ```
-
-## Install with skills.sh
-
-Skills only. Does not install the engineering rule.
-
-```bash
-npx skills add BreacherGames/ai-workflows
-```
-
-Then use `aiw install` if you also want the always-on rule.
 
 ## Layout
 

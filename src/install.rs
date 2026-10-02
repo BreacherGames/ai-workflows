@@ -40,6 +40,7 @@ pub fn doctor() -> Result<()> {
         status_label(rule.is_file()),
         rule.display()
     );
+    println!("ecosystem use aiw add owner/repo via skills.sh");
     Ok(())
 }
 

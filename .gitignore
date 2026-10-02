@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*~
+.idea/
+.vscode/
+.cursor/
+.ai-workflows/
+/target/
